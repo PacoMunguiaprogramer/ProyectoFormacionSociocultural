@@ -7,24 +7,59 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+.centered {
+    text-align: center;
+    margin: auto;
+}
 
 .container {
-    padding: 20px;
+    padding: 300px;
 }
 .title {
     font-size: 24px;
     font-weight: bold;
     margin: 20px 0;
 }
+.logo {
+    display: flex;
+    align-items: center; /* Alinea el logo verticalmente con el texto del menú */
+}
+
+.logo-img {
+    height: 55px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 20px; 
+    padding:0;/* Espacio entre el logo y el menú */
+    
+}
+
 .details {
     margin: 10px 0;
     font-size: 18px;
 }
+.about-content {
+    display: flex;
+    /* Alinea verticalmente la imagen y el texto */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    margin: 10px 0;
+    text-align: justify; /* Opcional: espacio alrededor del contenedor */
+}
+
+.about-img {
+    width: 150px; /* Ajusta el tamaño de la imagen según tu necesidad */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    margin-left: 200px; /* Opcional: bordes redondeados */
+}
+
+.about-text {
+    max-width: 500px;
+    margin-left: 10px; /* Opcional: limita el ancho del texto */
+}
 
 header {
-    background: #0b023a;
+    background: #8069f1;
     color: #fff;
-    padding: 1rem;
+    padding: 0rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -42,13 +77,20 @@ header.scrolled {
     cursor: pointer;
     font-size: 1.5rem;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el logo y el menú */
+    align-items: center; /* Alinea verticalmente todos los elementos en el header */
+}
 
 .nav-list {
-    list-style: none;
     display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
+    gap: 20px; /* Espacio entre los elementos del menú */
 }
+
 
 .nav-list li {
     margin-right: 1rem;
@@ -245,7 +287,7 @@ video {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background: #444;
+    background: #8069f1;;
     list-style: none;
     padding: 0;
     margin: 0;

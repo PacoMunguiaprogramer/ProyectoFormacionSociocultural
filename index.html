@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -9,14 +9,16 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Mi Sitio</div>
+            <div class="logo">
+                <img src="imagenes/logout-removebg-preview.png" alt="Logo" class="logo-img"> <!-- Agrega tu logo aquí -->
+            </div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="nav-list">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li class="dropdown">
                     <a href="#aprendizaje">Aprendizaje</a>
                     <ul class="dropdown-menu">
@@ -27,33 +29,41 @@
                                 <li><a href="3.2.html">3.2</a></li>
                                 <li><a href="3.3.html">3.3</a></li>
                                 <li><a href="3.4.html">3.4</a></li>
-                                <li><a href="3.5..html">3.5</a></li>
+                                <li><a href="3.5.html">3.5</a></li>
                                 <li><a href="3.6.html">3.6</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section id="inicio">
-            <center>
+        <section id="inicio" class="centered">
             <h1>Inicio</h1>
-            <p>Bienvenido a nuestro sitio de aprendizaje.</p>
+            <p>Bienvenido a nuestro Objeto Virtual de Aprendizaje</p>
         </section>
-    </center>
-    <center>
-        <section id="aprendizaje">
+        <section id="aprendizaje" class="centered">
             <h1>Aprendizaje</h1>
-            <p>Aquí encontrarás contenido virtual de aprendizaje.</p>
+            <p>Aquí encontrarás contenido que desarrollará a fortalecer tus conocimientos mediante el uso de un Objeto Virtual de Aprendizaje.</p>
+            <center>
+            <img src="imagenes/portada.jpg" alt="Portada del sitio" width="300" height="300">
+        </center>
         </section>
-        <img src="imagenes/portada.jpg" alt="" width="300px" height="300px">
+        
+        <section>
+            <center>
+            <h1>Acerca de mí</h1></center>
+            <div class="about-content">
+               
+                <img src="imagenes/pacoo.jpg" alt="Francisco Arturo Munguía López" class="about-img">
+                <p class="about-text">Mi nombre es Francisco Arturo Munguía López, tengo 23 años, actualmente estoy estudiando la carrera de Tecnologías de la Información en el Área de Desarrollo de Software Multiplataforma. Me considero una persona que persigue sus sueños y lucha por ellos. Algo que me gusta es bailar danza folclórica y Huapango. También me gusta ayudar a las personas.
+                Espero que esta OVA sea de mucha utilidad y fortalezca el aprendizaje en cada uno de los temas que se presentan.</p>
             </div>
-        </div>
-    </center>
+        </section>
+   
     </main>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
