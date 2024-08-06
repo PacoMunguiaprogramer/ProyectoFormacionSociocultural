@@ -1,0 +1,302 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.details {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+header {
+    background: #0b023a;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+header.scrolled {
+    background: #222;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 1rem;
+    position: relative;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #f0f0f0;
+}
+
+
+
+.dropdown-menu a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #555;
+}
+
+.content-section {
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.content-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem 0;
+}
+
+/* Añadir más margen específico para imágenes que están al final de secciones */
+.content-section img {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 0.5rem;
+}
+
+.socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.show-animation {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.show-animation-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: relative;
+    }
+}
+.content-section h2, .content-section h3 {
+    text-align: center;
+}
+.content-section p {
+    text-align: justify;
+}
+.content-section img {
+    display: block;
+    margin: 0 auto;
+    width: 300px; /* Ancho fijo */
+    height: auto; /* Ajuste proporcional */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+video {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1.5rem 0;
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Contenedor para videos */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+/* Estilos para el índice de navegación */
+/* Estilos para el índice de navegación */
+/* Estilos para el índice de navegación */
+/* Estilos para el índice de navegación */
+/* Estilos para el índice de navegación */
+/* Estilos para el índice de navegación */
+.sidebar {
+    position: fixed; /* Mantiene la sidebar fija en la pantalla */
+    top: 27rem; /* Ajusta este valor según el menú horizontal */
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 8rem); /* Ajusta la altura para que se acomode a la pantalla */
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Estilos para el menú de navegación */
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    z-index: 1100; /* Asegúrate de que el menú esté por encima de la sidebar */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
+    z-index: 1200; /* Asegúrate de que el menú desplegable esté por encima de la sidebar */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Asegúrate de que el contenido principal no solape la sidebar */
+main {
+    margin-left: 220px; /* Ajusta el margen para que el contenido no esté debajo de la sidebar */
+}
+
+
+main {
+    margin-left: 220px; /* Ajusta el margen para no solapar la sidebar */
+}
+
+
+main {
+    margin-left: 220px; /* Ajusta el margen para no solapar la sidebar */
+    padding: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background: #444;
+}
+footer{
+    background: #0b023a;
+}
