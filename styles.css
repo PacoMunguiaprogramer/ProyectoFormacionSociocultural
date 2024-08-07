@@ -38,22 +38,22 @@ body {
 }
 .about-content {
     display: flex;
-    /* Alinea verticalmente la imagen y el texto */
-    gap: 10px; /* Espacio entre la imagen y el texto */
-    margin: 10px 0;
+    gap: -1000px; /* Espacio entre la imagen y el texto */
     text-align: justify; /* Opcional: espacio alrededor del contenedor */
+    margin-left: -200px;
 }
 
 .about-img {
-    width: 150px; /* Ajusta el tamaño de la imagen según tu necesidad */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 70px; /* Ajusta el tamaño de la imagen según tu necesidad */
+    height: 1px; /* Mantiene la proporción de la imagen */
     border-radius: 8px;
-    margin-left: 200px; /* Opcional: bordes redondeados */
+  /* Opcional: bordes redondeados */
 }
 
 .about-text {
     max-width: 500px;
-    margin-left: 10px; /* Opcional: limita el ancho del texto */
+    margin-left: -300px; /* Opcional: limita el ancho del texto */
+  align-content: center;
 }
 
 header {
@@ -127,15 +127,25 @@ header.scrolled {
     margin: 2rem 1rem;
     border-radius: 8px;
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
+.content-section p{
+    text-align: center;
+}
 .content-section.show {
     opacity: 1;
     transform: translateY(0);
+}
+.content-section.show ul li{
+    text-align: center;
+   
+}
+.content-section.show p{
+    text-align: justify;
+    
 }
 
 /* Estilos para imágenes */
@@ -149,6 +159,7 @@ img {
 /* Añadir más margen específico para imágenes que están al final de secciones */
 .content-section img {
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 footer {
@@ -238,6 +249,27 @@ footer {
     height: auto; /* Ajuste proporcional */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.content-sectionn img{
+    display: block;
+    margin: 0 auto;
+   width: 100%; 
+   height: auto;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content-sectionn{
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border-radius: 8px;
+    background: #fff;
+  width: auto;
+  text-align: justify;
+}
+.content-sectionn h2{
+    font-size: 18px;
+    align-content: center;
 }
 video {
     border-radius: 8px;
@@ -255,11 +287,6 @@ video {
     gap: 1rem;
     justify-content: center;
 }
-/* Estilos para el índice de navegación */
-/* Estilos para el índice de navegación */
-/* Estilos para el índice de navegación */
-/* Estilos para el índice de navegación */
-/* Estilos para el índice de navegación */
 /* Estilos para el índice de navegación */
 .sidebar {
     position: fixed; /* Mantiene la sidebar fija en la pantalla */
@@ -301,21 +328,11 @@ video {
     display: block;
 }
 
-
 /* Asegúrate de que el contenido principal no solape la sidebar */
-main {
-    margin-left: 220px; /* Ajusta el margen para que el contenido no esté debajo de la sidebar */
-}
-
-
-main {
-    margin-left: 220px; /* Ajusta el margen para no solapar la sidebar */
-}
-
-
 main {
     margin-left: 220px; /* Ajusta el margen para no solapar la sidebar */
     padding: 1rem;
+    margin-top: 10%;
 }
 
 .sidebar ul {
@@ -339,6 +356,7 @@ main {
 .sidebar ul li a:hover {
     background: #444;
 }
-footer{
+
+footer {
     background: #0b023a;
 }
